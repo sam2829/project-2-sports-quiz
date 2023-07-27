@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>sports quiz</h1>
+  </head>
+  <body>
+    <h1 class="heading">The Sports Quiz!!!</h1>
 
+    <div class="game-area">
+      <div class="question-area">
+        <p>Where did Jurgen Klopp begin his managerial career?</p>
+      </div>
+
+      <div class="answer-area">
+        <button class="answer-a">Answer A</button>
+        <button class="answer-b">Answer B</button>
+        <button class="answer-c">Answer C</button>
+        <button class="answer-d">Answer D</button>
+      </div>
+      <button data-type="submit">Submit</button>
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    </div>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
