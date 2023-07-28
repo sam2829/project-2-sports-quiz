@@ -84,6 +84,11 @@ body {
     padding: 0.5rem;
 }
 
+
+.answer-area button:active,
+.answer-area button:hover {
+    background-color: aqua;
+}
 /* Submit button style */
 
 #submit {
@@ -94,6 +99,10 @@ body {
     font-size: 130%;
     padding: 0.8rem;
     color: #fff;
+}
+
+#submit:hover {
+    background-color: aqua;
 }
 
 /* Score are style */
@@ -112,3 +121,5 @@ body {
 #incorrect-scores {
     color: red;
 }
+
+
