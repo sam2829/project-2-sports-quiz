@@ -123,3 +123,40 @@ body {
 }
 
 
+/* media queries for screens 800px wide and below */
+
+@media (max-width: 800px) {
+
+    /* Change gri layout for answer area for screens 800px and below*/
+    .answer-area {
+       grid-template-columns: repeat(1, 1fr);
+       grid-template-rows: repeat(4, 1fr);
+    }
+
+    .answer-a {
+       grid-column: 1/ 2;
+       grid-row: 1/ 2;
+       font-size: 1.6rem;
+        }
+
+    .answer-b {
+       grid-column: 1/ 2;
+       grid-row: 2/ 3;
+       font-size: 1.6rem;
+         }
+
+    .answer-c {
+       grid-column: 1/ 2;
+       grid-row: 3/ 4;
+       font-size: 1.6rem;
+        }
+
+    .answer-d {
+       grid-column: 1/ 2;
+       grid-row: 4/ 5;
+       font-size: 1.6rem;
+        }
+        
+        
+       
+}
