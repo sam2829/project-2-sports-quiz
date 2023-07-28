@@ -77,3 +77,15 @@ body {
     border-radius: 8px;
     color: #fff;
 }
+
+/* Submit button style */
+
+#submit {
+    font: 1.5rem;
+    margin-top: 20px;
+    background-color: gray;
+    border-radius: 8px;
+    font-size: 130%;
+    padding: 0.8rem;
+    color: #fff;
+}
