@@ -40,7 +40,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 15px;
+    row-gap: 30px;
     align-content: center;
 
 }
@@ -82,10 +82,27 @@ body {
 
 #submit {
     font: 1.5rem;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: gray;
     border-radius: 8px;
     font-size: 130%;
     padding: 0.8rem;
     color: #fff;
+}
+
+/* Score are style */
+
+.score-area {
+    margin-top: 90px;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#correct-scores {
+    color: green;
+}
+
+#incorrect-scores {
+    color: red;
 }
