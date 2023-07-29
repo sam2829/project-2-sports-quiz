@@ -114,7 +114,7 @@ body {
 
 
 
-/* Submit button style */
+/* Next button style */
 
 #next-button {
     font: 1.5rem;
@@ -129,6 +129,25 @@ body {
 #next-button:hover {
     background-color: aqua;
 }
+
+
+/* Play again button style */
+#play-again {
+    font: 1.5rem;
+    margin-top: 50px;
+    background-color: blue;
+    border-radius: 8px;
+    font-size: 130%;
+    padding: 0.8rem;
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+
+#play-again:hover {
+    background-color: aqua;
+}
+
 
 /* Score are style */
 

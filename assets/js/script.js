@@ -144,6 +144,7 @@ let questionNumber = 0;
 let answerArea = document.getElementById("answer-area");
 let nextButton = document.getElementById("next-button");
 let correctScore = parseInt(document.getElementById("score").innerText);
+let incorrectScore = parseInt(document.getElementById("incorrect").innerText);
 // Wait for DOM to finish laoding before starting the quiz
 // Set all scores to 0 and call to start the quiz
 
@@ -262,7 +263,7 @@ function incrementScore() {
 // function to increment the incorrect score
 
 function incrementIncorrectScore() {
-    let incorrectScore = parseInt(document.getElementById("incorrect").innerText);
+   
     document.getElementById("incorrect").innerText = ++incorrectScore;
     
 }
@@ -281,9 +282,33 @@ function nextQuestion() {
 
 function displayFinalScore() {
 
-    
+    //Hide original question, answers and next button areas and display play again button
     alert(`You scored ${correctScore} / 15!`);
     document.getElementById("answer-area").style.display = "none";
     document.getElementById("question-area").style.display = "none";
     document.getElementById("next-button").style.display = "none";
+    document.getElementById("play-again").style.display = "revert";
+  
+
+    //click play again button to start quiz again
+
+    document.getElementById("play-again").addEventListener("click", restartQuiz);
+
+}
+
+
+//function to reset the page to start quiz again
+
+function restartQuiz() {
+    questionNumber = 0;
+    document.getElementById("answer-area").style.display = "grid";
+    document.getElementById("question-area").style.display = "block";
+    document.getElementById("next-button").style.display = "revert";
+    document.getElementById("play-again").style.display = "none";
+    document.getElementById("score").innerText = 0;
+    document.getElementById("incorrect").innerText = 0;
+    correctScore = 0;
+    incorrectScore = 0;
+
+    startQuiz();
 }
