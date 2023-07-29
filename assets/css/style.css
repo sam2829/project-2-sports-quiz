@@ -28,12 +28,12 @@ body {
 
 /* Question Style */
 
-.question-area {
+#question-area {
     font-size: 2.5rem;
     padding: 1px;
 }
 
-.question-area p {
+#question-area p {
     margin: 30px;
 }
 

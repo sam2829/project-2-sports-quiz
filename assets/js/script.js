@@ -143,6 +143,7 @@ let randomQuestions = questions.sort(() => Math.random() - .5);
 let questionNumber = 0;
 let answerArea = document.getElementById("answer-area");
 let nextButton = document.getElementById("next-button");
+let correctScore = parseInt(document.getElementById("score").innerText);
 // Wait for DOM to finish laoding before starting the quiz
 // Set all scores to 0 and call to start the quiz
 
@@ -253,16 +254,16 @@ function checkAnswer(e) {
 // function to increment the correct score
 
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+    
+    document.getElementById("score").innerText = ++correctScore;
    
 }
 
 // function to increment the incorrect score
 
 function incrementIncorrectScore() {
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
+    let incorrectScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++incorrectScore;
     
 }
 
@@ -272,6 +273,17 @@ function nextQuestion() {
     if (questionNumber < questions.length) {
         displayQuestions();
     } else {
-        alert("quiz complete");
+        displayFinalScore();
     }
+}
+
+//function to display the final score when quiz is complete
+
+function displayFinalScore() {
+
+    
+    alert(`You scored ${correctScore} / 15!`);
+    document.getElementById("answer-area").style.display = "none";
+    document.getElementById("question-area").style.display = "none";
+    document.getElementById("next-button").style.display = "none";
 }
