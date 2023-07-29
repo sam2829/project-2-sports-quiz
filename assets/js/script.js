@@ -8,7 +8,7 @@ let questions = [
             {text: "Lets go win a championship", correct: false},
             {text: "I'm here to win", correct: false},
             {text: "I'm better at basketball than baseball", correct: false}
-]
+],
 },
     
     {
@@ -18,7 +18,7 @@ let questions = [
             {text: "Oktoberfest", correct: false},
             {text: "Mainz", correct: true},
             {text: "Borussia Dortmund", correct: false}
-    ]
+    ],
     },
     {
         question: "Which cricketer has taken the most test wickets?",
@@ -27,7 +27,7 @@ let questions = [
             {text: "Glen McGrath", correct: false},
             {text: "Muthiah Muralitharan", correct: true},
             {text: "Eddie the eagle", correct: false}
-        ]
+        ],
     },
     {
         question: "Who did Muhammad Ali fight in rumble in the jungle?",
@@ -36,7 +36,7 @@ let questions = [
             {text: "George Foreman", correct: true},
             {text: "Larry Holmes", correct: false},
             {text: "Joe Frazier", correct: false}
-        ]
+        ],
     },
     {
         question: "In which sport would you commonly use the terms: Chukka, Neckshot and Millionaires shot?",
@@ -45,7 +45,7 @@ let questions = [
             {text: "Bowls", correct: false},
             {text: "Volley Ball", correct: false},
             {text: "Rugby", correct: false}
-        ]
+        ],
     },
     {
         question: "Which formula 1 team did Lewis Hamilton compete for from 2007 to 2012?",
@@ -54,7 +54,7 @@ let questions = [
             {text: "Ferrari", correct: false},
             {text: "Vauxhall", correct: false},
             {text: "McLaren", correct: true}
-        ]
+        ],
     },
     {
         question: "What sport did Princess Anne compete in at the 1976 summer Olympic games?",
@@ -63,7 +63,7 @@ let questions = [
             {text: "Equestrian", correct: true},
             {text: "Dressage", correct: false},
             {text: "Gymnastics", correct: false}
-        ]
+        ],
     },
     {
         question: "How many Olympic gold medals did Michael Phelps win?",
@@ -72,7 +72,7 @@ let questions = [
             {text: "25", correct: false},
             {text: "21", correct: false},
             {text: "1", correct: false},
-        ]
+        ],
     },
     {
         question: "Which female tennis player has won the most grand slams?",
@@ -81,7 +81,7 @@ let questions = [
             {text: "Margaret Court", correct: true},
             {text: "Serena Williams", correct: false},
             {text: "Kim Kardashian", correct: false}
-        ]
+        ],
     },
     {
         question: "Which golfers have won the most PGA Tour events with 82 wins each?",
@@ -90,7 +90,7 @@ let questions = [
             {text: "Jack Nicklaus & Nick Faldo", correct: false},
             {text: "Tiger Woods & Sam Snead", correct: true},
             {text: "Phil & Grant Mitchell", correct: false}
-        ]
+        ],
     },
     {
         question: "Where did Sir Alex Ferguson start out his managerial career?",
@@ -99,7 +99,7 @@ let questions = [
             {text: "Aberdeen", correct: false},
             {text: "Mardy FC", correct: false},
             {text: "East Stirlingshire", correct: true}
-        ]
+        ],
     },
     {
         question: "Who is the Premier Leagues all time top goal scorer?",
@@ -108,7 +108,7 @@ let questions = [
             {text: "Alan Shearer", correct: true},
             {text: "Harry Kane", correct: false},
             {text: "Wayne Rooney", correct: false},
-        ]
+        ],
     },
     {
         question: "What was Usain Bolts 100 meters record breaking time?",
@@ -117,7 +117,7 @@ let questions = [
             {text: "10.05 Seconds", correct: false},
             {text: "9.58 Seconds", correct: true},
             {text: "9.89 Seconds", correct: false}
-        ]
+        ],
     },
     {
         question: "What year did England win the rugby world cup?",
@@ -126,7 +126,7 @@ let questions = [
             {text: "2007", correct: false},
             {text: "1966", correct: false},
             {text: "2022", correct: false}
-        ]
+        ],
     },
     {
         question: "Who is the leading all time try scorer for Wales in rugby?",
@@ -135,12 +135,13 @@ let questions = [
             {text: "Shane Williams", correct: true},
             {text: "Gareth Thomas", correct: false},
             {text: "Hugh Llewellyn", correct: false}
-        ]
+        ],
     },
 ];
 
 let randomQuestions = questions.sort(() => Math.random() - .5);
 let questionNumber = 0;
+let answerArea = document.getElementById("answer-area");
 
 // Wait for DOM to finish laoding before starting the quiz
 // Set all scores to 0 and call to start the quiz
@@ -168,7 +169,7 @@ function startQuiz() {
 
 function displayQuestions() {
 
-   
+   resetPage();
 
     let currentQuestion = randomQuestions[questionNumber];
     
@@ -176,10 +177,62 @@ function displayQuestions() {
 
     document.getElementById("question").textContent = questionNumber + ". " + currentQuestion.question;
 
+
     // display answers with the current question
+    
+    currentQuestion.answers.forEach(answer => {
+       const button = document.createElement("button");
+       button.innerHTML = answer.text;
+       button.classList.add("answer-buttons");
+       //button.classList.add("answer-a");
+       //button.classList.add("answer-b");
+       //button.classList.add("answer-c");
+       //button.classList.add("answer-d");
+       button.classList.add("answer-area");
+      
+       answerArea.appendChild(button);
 
-    currentQuestion.answers.array.forEach(answer => {
-        document.getElementsByClassName("answers").textContent = currentQuestion.answers;
+       if (answer.correct) {
+        button.dataset.correct = answer.correct;
+       }
+     
+
+       // When an answer button is clicked it will call the check answer function
+       button.addEventListener("click", checkAnswer);
+    })
+   
+   
+}
+
+
+//This is to reset the page so only the current answers are being shown
+
+function resetPage() {
+   while (answerArea.firstChild){
+    answerArea.removeChild(answerArea.firstChild);
+   }
+}
+
+
+// Function to check the answer selected and highlight correct or incorrect answer
+
+function checkAnswer(e) {
+
+    let selectedAnswer = e.target;
+    let correctAnswer = selectedAnswer.dataset.correct === "true";
+
+    if (correctAnswer) {
+        selectedAnswer.classList.add("correct");
+        incrementScore();
+    } else {
+        selectedAnswer.classList.add("incorrect");
+        incrementIncorrectScore();
+    }
+
+    Array.from(answerArea.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
     });
-
 }
