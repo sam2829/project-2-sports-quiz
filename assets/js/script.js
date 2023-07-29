@@ -237,6 +237,10 @@ function checkAnswer(e) {
         }
         button.disabled = true;
     });
+    
+    // call for next question
+
+    document.getElementById("next-button").addEventListener("click", nextQuestion);
 }
 
 
@@ -252,4 +256,14 @@ function incrementScore() {
 function incrementIncorrectScore() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
+}
+
+// function to display the next question
+
+function nextQuestion() {
+    if (questionNumber < questions.length) {
+        displayQuestions();
+    } else {
+        alert("quiz complete");
+    }
 }
