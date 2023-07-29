@@ -142,7 +142,7 @@ let questions = [
 let randomQuestions = questions.sort(() => Math.random() - .5);
 let questionNumber = 0;
 let answerArea = document.getElementById("answer-area");
-
+let nextButton = document.getElementById("next-button");
 // Wait for DOM to finish laoding before starting the quiz
 // Set all scores to 0 and call to start the quiz
 
@@ -208,6 +208,9 @@ function displayQuestions() {
 //This is to reset the page so only the current answers are being shown
 
 function resetPage() {
+
+   nextButton.disabled = true;
+
    while (answerArea.firstChild){
     answerArea.removeChild(answerArea.firstChild);
    }
@@ -236,11 +239,14 @@ function checkAnswer(e) {
             button.classList.add("correct");
         }
         button.disabled = true;
+
+        
     });
     
     // call for next question
-
-    document.getElementById("next-button").addEventListener("click", nextQuestion);
+    nextButton.disabled = false;
+    nextButton.addEventListener("click", nextQuestion);
+    
 }
 
 
@@ -249,6 +255,7 @@ function checkAnswer(e) {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
+   
 }
 
 // function to increment the incorrect score
@@ -256,6 +263,7 @@ function incrementScore() {
 function incrementIncorrectScore() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
+    
 }
 
 // function to display the next question
