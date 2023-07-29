@@ -223,11 +223,13 @@ function checkAnswer(e) {
 
     if (correctAnswer) {
         selectedAnswer.classList.add("correct");
-        incrementScore();
+      //  incrementScore();
     } else {
         selectedAnswer.classList.add("incorrect");
-        incrementIncorrectScore();
+       // incrementIncorrectScore();
     }
+
+    
 
     Array.from(answerArea.children).forEach(button => {
         if (button.dataset.correct === "true") {
