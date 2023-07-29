@@ -223,10 +223,10 @@ function checkAnswer(e) {
 
     if (correctAnswer) {
         selectedAnswer.classList.add("correct");
-      //  incrementScore();
+        incrementScore();
     } else {
         selectedAnswer.classList.add("incorrect");
-       // incrementIncorrectScore();
+        incrementIncorrectScore();
     }
 
     
@@ -237,4 +237,19 @@ function checkAnswer(e) {
         }
         button.disabled = true;
     });
+}
+
+
+// function to increment the correct score
+
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
+
+// function to increment the incorrect score
+
+function incrementIncorrectScore() {
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
