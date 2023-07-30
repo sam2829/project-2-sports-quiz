@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Start Quiz and select a random question
 
 function startQuiz() {
-   // randomQuestion();
+    
     displayQuestions();
 
 }
@@ -166,7 +166,7 @@ function startQuiz() {
 
 //function randomQuestion() {
    // let randomQuestions = questions.sort(() => Math.random() - .5);
-   // return questions[randomQuestions];
+   // return randomQuestions;
 
 //}
 
@@ -177,7 +177,7 @@ function displayQuestions() {
     resetPage();
 
 
-
+    //randomQuestion();
     let currentQuestion = randomQuestions[questionNumber];
 
     questionNumber = questionNumber + 1;
@@ -308,15 +308,15 @@ function displayFinalScore() {
 //function to reset the page to start quiz again
 
 function restartQuiz() {
-    questionNumber = 0;
-    document.getElementById("answer-area").style.display = "grid";
-    document.getElementById("question-area").style.display = "block";
-    document.getElementById("next-button").style.display = "revert";
-    document.getElementById("play-again").style.display = "none";
-    document.getElementById("score").innerText = 0;
-    document.getElementById("incorrect").innerText = 0;
-    correctScore = 0;
-    incorrectScore = 0;
+    //questionNumber = 0;
+    //document.getElementById("answer-area").style.display = "grid";
+    //document.getElementById("question-area").style.display = "block";
+    //document.getElementById("next-button").style.display = "revert";
+    //document.getElementById("play-again").style.display = "none";
+    //document.getElementById("score").innerText = 0;
+    //document.getElementById("incorrect").innerText = 0;
+    //correctScore = 0;
+    //incorrectScore = 0;
 
-    startQuiz();
+    location.reload ();
 }
