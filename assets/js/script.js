@@ -4,10 +4,10 @@ let questions = [
     {
         question: "When Michael Jordan returned to basketball in 1995, he released a statement to the media. what did the statement say?",
         answers: [
-            { text: "I'm back", correct: true },
-            { text: "Lets go win a championship", correct: false },
-            { text: "I'm here to win", correct: false },
-            { text: "I'm better at basketball than baseball", correct: false }
+            { text: `"I'm back"`, correct: true },
+            { text: `"Lets go win a championship"`, correct: false },
+            { text: `"I'm here to win"`, correct: false },
+            { text: `"I'm better at basketball than baseball"`, correct: false }
         ],
     },
 
