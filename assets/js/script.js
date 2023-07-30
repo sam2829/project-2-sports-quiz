@@ -290,7 +290,7 @@ function nextQuestion() {
 function displayFinalScore() {
 
     //Hide original question, answers and next button areas and display play again button
-    alert(`You scored ${correctScore} / 15!`);
+    
     document.getElementById("answer-area").style.display = "none";
     document.getElementById("next-button").style.display = "none";
     document.getElementById("play-again").style.display = "revert";
