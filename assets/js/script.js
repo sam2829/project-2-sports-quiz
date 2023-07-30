@@ -196,6 +196,7 @@ function displayQuestions() {
         //button.classList.add("answer-c");
         //button.classList.add("answer-d");
         button.classList.add("answer-area");
+        button.classList.add("answer-area_button");
 
         answerArea.appendChild(button);
 
@@ -246,6 +247,7 @@ function checkAnswer(e) {
             button.classList.add("correct");
         }
         button.disabled = true;
+        button.classList.remove("answer-area_button");
 
 
     });

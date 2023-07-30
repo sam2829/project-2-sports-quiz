@@ -95,8 +95,8 @@ body {
 }
 
 
-.answer-area button:active,
-.answer-area button:hover {
+
+.answer-area_button:hover {
     background-color: aqua;
 }
 
