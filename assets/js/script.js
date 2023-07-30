@@ -2,7 +2,7 @@
 
 let questions = [
     {
-        question: "When Michael Jordan returned to basketball in 1995, he released a statement to the media. what did the statement say?",
+        question: "What did Michael Jordan say to the media when he returned to basketball in 1995?",
         answers: [
             { text: `"I'm back"`, correct: true },
             { text: `"Lets go win a championship"`, correct: false },
