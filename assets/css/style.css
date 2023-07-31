@@ -54,7 +54,7 @@ body {
     width: 100%;
     height: auto;
     display: grid;
-    /*grid-template-columns: repeat(2, 1fr);
+   /*grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);*/
     row-gap: 30px;
     align-content: center;
@@ -233,4 +233,55 @@ body {
         
         
  
+}
+
+/* Media queries for screen sizes 600px wide and down */
+
+@media (max-width: 600px) {
+
+    /* Heading */
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    /*Questions area */
+
+    #question-area {
+        font-size: 2rem;
+    }
+
+    #question-area p {
+        margin: 15px;
+    }
+
+    /* answers area */
+    
+    .answer-area {
+        row-gap: 20px;
+    }
+
+    .answer-buttons {
+        font-size: 1.4rem;
+    }
+
+    /* next and play again buttons */
+
+    #next-button {
+        font-size: 120%;
+        margin-top: 40px;
+    }
+
+    #play-again {
+        font-size: 120%;
+        margin-top: 40px;
+    }
+
+    /*Score area*/
+
+    .score-area {
+        font-size: 1.4rem;
+        margin-top: 40px;
+    }
+
 }
