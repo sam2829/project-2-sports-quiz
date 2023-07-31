@@ -297,7 +297,7 @@ function displayFinalScore() {
 
     //Display final score
     
-    document.getElementById("question").innerText = `Congratulations! You scored ${correctScore} / 15!`;
+    document.getElementById("question").innerText = `Congratulations!\n You scored ${correctScore} / 15!`;
 
 
     //click play again button to start quiz again
