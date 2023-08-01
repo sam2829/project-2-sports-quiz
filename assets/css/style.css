@@ -54,35 +54,9 @@ body {
     width: 100%;
     height: auto;
     display: grid;
-    /*grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);*/
     row-gap: 30px;
     align-content: center;
 
-}
-
-.answer-a {
-    grid-column: 2/ 3;
-    grid-row: 1/ 2;
-    font-size: 1.6rem;
-}
-
-.answer-b {
-    grid-column: 4/ 5;
-    grid-row: 1/ 2;
-    font-size: 1.6rem;
-}
-
-.answer-c {
-    grid-column: 2/ 3;
-    grid-row: 2/ 3;
-    font-size: 1.6rem;
-}
-
-.answer-d {
-    grid-column: 4/ 5;
-    grid-row: 2/ 3;
-    font-size: 1.6rem;
 }
 
 /* Answer buttons style */

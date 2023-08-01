@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Start Quiz and select a random question
 
 function startQuiz() {
-    
+
     displayQuestions();
 
 }
@@ -165,8 +165,8 @@ function startQuiz() {
 //randomise the list of questions
 
 //function randomQuestion() {
-   // let randomQuestions = questions.sort(() => Math.random() - .5);
-   // return randomQuestions;
+// let randomQuestions = questions.sort(() => Math.random() - .5);
+// return randomQuestions;
 
 //}
 
@@ -191,10 +191,6 @@ function displayQuestions() {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("answer-buttons");
-        //button.classList.add("answer-a");
-        //button.classList.add("answer-b");
-        //button.classList.add("answer-c");
-        //button.classList.add("answer-d");
         button.classList.add("answer-area");
         button.classList.add("answer-area_button");
 
@@ -290,18 +286,18 @@ function nextQuestion() {
 function displayFinalScore() {
 
     //Hide original question, answers and next button areas and display play again button
-    
+
     document.getElementById("answer-area").style.display = "none";
     document.getElementById("next-button").style.display = "none";
     document.getElementById("play-again").style.display = "revert";
 
     //Display final score
-    
+
     document.getElementById("question").innerText = `Congratulations!\n You scored ${correctScore} / 15!`;
 
 
     //click play again button to start quiz again
-    
+
     document.getElementById("play-again").addEventListener("click", restartQuiz);
 
 }
@@ -320,5 +316,5 @@ function restartQuiz() {
     //correctScore = 0;
     //incorrectScore = 0;
 
-    location.reload ();
+    location.reload();
 }
