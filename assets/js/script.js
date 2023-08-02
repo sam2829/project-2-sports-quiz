@@ -277,6 +277,9 @@ function incrementIncorrectScore() {
 function nextQuestion() {
     if (questionNumber < questions.length) {
         displayQuestions();
+        
+        //code for progress bar
+        progressBar.style.width = `${(questionNumber/questions.length) * 100}%`;
     } else {
         displayFinalScore();
     }
@@ -316,9 +319,21 @@ function restartQuiz() {
     document.getElementById("incorrect").innerText = 0;
     correctScore = 0;
     incorrectScore = 0;
+    progressBar.style.width = "0%";
     
     startQuiz();
    
 
     //location.reload();
 }
+
+
+/**
+ * code for progress bar.
+ * this code was taken from online trevthedev777 
+ * quiz game multiple choice guthub
+ * when googled quiz progress bar.
+ */
+
+let progressBar = document.getElementById("my-bar")
+
