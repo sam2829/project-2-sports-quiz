@@ -47,3 +47,31 @@ Wireframes were created for both desktop and mobile devices.
 Desktop:
 
 Mobile:
+
+## Features
+
+This website consists of two page. Main page where the quiz will be carried out and a completion page presenting your score.
+
+Main Page:
+* A background image displaying the a sporting theme.
+* A clear heading of the webpage.
+* A progress bar showing what stages your at through out the quiz.
+* Scores keeping count of how many correct and incorrect answers you've made.
+* Question clearly displayed and what number question it is.
+* A selection of 4 answers to the question.
+* A next button which will aloow you to continue to the next question.
+
+Completion Page:
+
+* A background image displaying the a sporting theme.
+* A clear heading of the webpage.
+* A progress bar showing what stages your at through out the quiz.
+* Scores keeping count of how many correct and incorrect answers you've made.
+* A congratulations message displaying your final score.
+* A play again button if you wish to take part in the quiz again.
+
+
+Main Page Screen Shot:
+
+Completion Page Screen Shot:
+
