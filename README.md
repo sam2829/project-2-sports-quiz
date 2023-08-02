@@ -25,3 +25,25 @@ Link to deployed site:
   * [Lighthouse](#Lighthouse)
   * [Full Testing](#Full-Testing)
 * [Credits](#Credits)
+
+
+## Project Goals
+
+* To be able to view the website on a range of devices.
+* To be able to test your knowledge on the world of sport and having fun at the same time.
+* To be able to easily navigate your way through the quiz.
+  
+
+## Design 
+
+### Imagery
+
+The background image is to clearly show that you are invilved in the world of sport whilst taking part in the quiz. I have credited this image in the credits section.
+
+### Wireframes
+
+Wireframes were created for both desktop and mobile devices.
+
+Desktop:
+
+Mobile:
