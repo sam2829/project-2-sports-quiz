@@ -165,7 +165,8 @@ body {
 }
 
 #correct-scores {
-    color: rgb(0, 250, 0);;
+    color: rgb(0, 250, 0);
+    ;
 }
 
 #incorrect-scores {
