@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-<!--Font style link from google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font style link from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Sports Quiz</title>
-<!--Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png" />
   </head>
   <body>
+    <!--Html for the heading-->
     <h1 class="heading">The Sports Quiz!!!</h1>
-<!--Html for the question area of the page-->
+    <!--Html for the score area of the page and start of game area-->
     <div class="game-area">
+      <div class="score-area">
+        <p class="scores" id="correct-scores">
+          Correct Answers <span id="score">0</span>
+        </p>
+        <p class="scores" id="incorrect-scores">
+          Incorrect Answers <span id="incorrect">0</span>
+        </p>
+      </div>
+      <!--Html for the question area of the page-->
       <div class="question-area" id="question-area">
         <p id="question"></p>
       </div>
-<!--Html for the answer area of the page-->
+      <!--Html for the answer area of the page-->
       <div class="answer-area" id="answer-area">
         <button class="answer-buttons"></button>
         <button class="answer-buttons"></button>
@@ -28,15 +41,11 @@
         <button class="answer-buttons"></button>
       </div>
       <div>
-      <button data-type="submit" id="next-button">Next</button>
-      <button data-type="submit" id="play-again">Play again!</button>
+        <button data-type="submit" id="next-button">Next</button>
+        <button data-type="submit" id="play-again">Play again!</button>
+      </div>
     </div>
-<!--Html for the score area of the page-->
-    <div class="score-area">
-        <p class="scores" id="correct-scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores" id="incorrect-scores">Incorrect Answers <span id="incorrect">0</span></p>
-    </div>
- <!--Link to javascript-->   
+    <!--Link to javascript-->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
