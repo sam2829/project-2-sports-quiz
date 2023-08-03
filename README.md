@@ -6,7 +6,7 @@ install wireframe here
 
 The Sports Quiz was created as my second milestone project for the Code Institute Level 5 Diploma in Web Application Development.
 
-Link to deployed site:
+Link to deployed site:  https://sam2829.github.io/project-2-sports-quiz/ 
 
 ## Contents
 
