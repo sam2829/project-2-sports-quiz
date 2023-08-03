@@ -154,7 +154,23 @@ The W3C Validator was used to validate the html and css files for this website. 
 
 ### Lighthouse
 
-I used Lighthouse within the Chrome Developer Tools to test for accessibility of the website:
+I used Lighthouse within the Chrome Developer Tools to test for accessibility of the website.
+
+Main page desktop screenshot:
+
+![Main page lighthouse desktop](assets/screenshots/lighthouse-desktop.png)
+
+Main page mobile scrrenshot:
+
+![Main page lighthouse mobile](assets/screenshots/lighthouse-mobile.png)
+
+Quiz complete page desktop screenshot:
+
+![Quiz complete page lighthouse desktop](assets/screenshots/lighthouse-complete-desktop.png)
+
+Quiz complete page mobile screenshot:
+
+![Quiz complete page lighthouse mobile](assets/screenshots/lighthouse-complete-mobile.png)
 
 ### Full Testing
 
