@@ -117,9 +117,24 @@ Github Pages was used to deploy the live website. To do this are as followed:
 
 ## Testing
 
+Throughout the build of this project testing was an ongoing process mainly using Chrome Developer. This helped me with any alignment issues or any other styling issues i may have had.
+
+An issues i did have was the correct and incorrect score displays were hard to see when originally positioned at the bottom of the page, due to the background image. The scores were then moved to the top of the page and alot more visible.
+
+I have also checked that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar.
+
+I have tested that the page works in different browsers: Chrome, Firefox, Microsoft Edge.
+
 ### W3C Validator
 
+The W3C Validator was used to validate the html and css files for this website. This was done via direct input method.
+
+* HTHML - No errors or warnings found.
+* CSS - No errors or warnings found.
+
 ### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to test for accessibility of the website:
 
 ### Full Testing
 
