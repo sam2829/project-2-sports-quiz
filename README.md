@@ -95,6 +95,14 @@ Completion Page:
 
 * A play again button if you wish to take part in the quiz again.
 
+Quiz complete page desktop screenshot:
+
+![Complete page desktop](assets/screenshots/complete-desktop.png)
+
+Quiz complete page mobile screenshot:
+
+![Complete page mobile](assets/screenshots/complete-mobile.png)
+
 ## Technologies Used
 
 ### Languages Used
