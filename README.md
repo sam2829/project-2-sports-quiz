@@ -1,6 +1,6 @@
 # The Sports Quiz
 
-
+![Responsive](assets/screenshots/responsive.png)
 
 The sports quiz is designed to be a responsive website allowing visitors to view on a range of devices. It allows visitors to test there knowledge on the world of sport.
 
@@ -68,6 +68,18 @@ Main Page:
 * A selection of 4 answers to the question.
 
 * A next button which will aloow you to continue to the next question.
+
+Main page desktop screenshot 1:
+
+![Main page desktop](assets/screenshots/desktop-1.png)
+
+Main page desktop screenshot 2:
+
+![Main page desktop](assets/screenshots/desktop-2.png)
+
+Main page mobile screenshot:
+
+![Main page mobile](assets/screenshots/mobile.png)
 
 Completion Page:
 
