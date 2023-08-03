@@ -147,7 +147,7 @@ let answerArea = document.getElementById("answer-area");
 let nextButton = document.getElementById("next-button");
 let correctScore = parseInt(document.getElementById("score").innerText);
 let incorrectScore = parseInt(document.getElementById("incorrect").innerText);
-let progressBar = document.getElementById("my-bar")
+let progressBar = document.getElementById("my-bar");
 
 // Wait for DOM to finish laoding before starting the quiz
 
@@ -159,10 +159,10 @@ document.addEventListener("DOMContentLoaded", function pageLoaded() {
 // Start Quiz and call for the display questions function
 
 function startQuiz() {
-    
-    
+
+
     displayQuestions();
-    
+
 }
 
 //Display questions function
@@ -170,7 +170,7 @@ function startQuiz() {
 function displayQuestions() {
 
     resetPage();
-    
+
     let currentQuestion = randomQuestions[questionNumber];
 
     questionNumber = questionNumber + 1;
@@ -271,14 +271,14 @@ function incrementIncorrectScore() {
 function nextQuestion() {
     if (questionNumber < questions.length) {
         displayQuestions();
-        
+
         /**
         * code for progress bar.
         * this code was taken from online trevthedev777 
         * quiz game multiple choice guthub
         * when googled quiz progress bar.
         */
-        progressBar.style.width = `${(questionNumber/questions.length) * 100}%`;
+        progressBar.style.width = `${(questionNumber / questions.length) * 100}%`;
     } else {
         displayFinalScore();
     }
@@ -311,7 +311,6 @@ function displayFinalScore() {
 function restartQuiz() {
     questionNumber = 0;
     document.getElementById("answer-area").style.display = "grid";
-    document.getElementById("question-area").style.display = "block";
     document.getElementById("next-button").style.display = "revert";
     document.getElementById("play-again").style.display = "none";
     document.getElementById("score").innerText = 0;
@@ -319,7 +318,7 @@ function restartQuiz() {
     correctScore = 0;
     incorrectScore = 0;
     progressBar.style.width = "0%";
-    
+
     startQuiz();
 }
 
