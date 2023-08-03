@@ -1,3 +1,5 @@
+
+
 //List of all the questions and answers in the quiz
 
 let questions = [
@@ -145,17 +147,16 @@ let answerArea = document.getElementById("answer-area");
 let nextButton = document.getElementById("next-button");
 let correctScore = parseInt(document.getElementById("score").innerText);
 let incorrectScore = parseInt(document.getElementById("incorrect").innerText);
-
+let progressBar = document.getElementById("my-bar")
 
 // Wait for DOM to finish laoding before starting the quiz
-// Set all scores to 0 and call to start the quiz
 
 document.addEventListener("DOMContentLoaded", function pageLoaded() {
     startQuiz();
 
 });
 
-// Start Quiz and select a random question
+// Start Quiz and call for the display questions function
 
 function startQuiz() {
     
@@ -163,15 +164,6 @@ function startQuiz() {
     displayQuestions();
     
 }
-
-//randomise the list of questions
-
-//function randomQuestion() {
-    
- //let randomiseQuestions = questions.sort(() => Math.random() - .5);
- //return randomiseQuestions;
-
-//}
 
 //Display questions function
 
@@ -186,7 +178,7 @@ function displayQuestions() {
     document.getElementById("question").textContent = questionNumber + ". " + currentQuestion.question;
 
 
-    // display answers with the current question
+    // display answers with the current question and add style classes to the buttons
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -210,7 +202,7 @@ function displayQuestions() {
 }
 
 
-//This is to reset the page so only the current answers are being shown
+//This is to reset the page so only the current answers are being shown and next button is disabled
 
 function resetPage() {
 
@@ -222,7 +214,7 @@ function resetPage() {
 }
 
 
-// Function to check the answer selected and highlight correct or incorrect answer
+// Function to check the answer selected and highlight correct or incorrect answer. calls increment correct of incorrect scores.
 
 function checkAnswer(e) {
 
@@ -243,6 +235,8 @@ function checkAnswer(e) {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
+
+        //stops from selecting another answer and removes hover style over buttons
         button.disabled = true;
         button.classList.remove("answer-area_button");
 
@@ -278,7 +272,12 @@ function nextQuestion() {
     if (questionNumber < questions.length) {
         displayQuestions();
         
-        //code for progress bar
+        /**
+        * code for progress bar.
+        * this code was taken from online trevthedev777 
+        * quiz game multiple choice guthub
+        * when googled quiz progress bar.
+        */
         progressBar.style.width = `${(questionNumber/questions.length) * 100}%`;
     } else {
         displayFinalScore();
@@ -322,18 +321,10 @@ function restartQuiz() {
     progressBar.style.width = "0%";
     
     startQuiz();
-   
-
-    //location.reload();
 }
 
 
-/**
- * code for progress bar.
- * this code was taken from online trevthedev777 
- * quiz game multiple choice guthub
- * when googled quiz progress bar.
- */
 
-let progressBar = document.getElementById("my-bar")
+
+
 
