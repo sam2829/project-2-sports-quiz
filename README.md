@@ -21,15 +21,20 @@ Link to deployed site:
     - [Languages Used](#languages-used)
     - [Frameworks \& Programs Used](#frameworks--programs-used)
   - [Deployment](#deployment)
-
-- - - 
+  - [Testing](#testing)
+    - [W3C Validator](#w3c-validator)
+    - [Lighthouse](#lighthouse)
+    - [Full Testing](#full-testing)
+  - [Credits](#credits)
 
 ## Project Goals
 
 * To be able to view the website on a range of devices.
+
 * To be able to test your knowledge on the world of sport and having fun at the same time.
+
 * To be able to easily navigate your way through the quiz.
-  
+
 ## Design
 
 ### Imagery
@@ -51,20 +56,31 @@ This website consists of two page. Main page where the quiz will be carried out 
 Main Page:
 
 * A background image displaying the a sporting theme.
+
 * A clear heading of the webpage.
+
 * A progress bar showing what stages your at through out the quiz.
+
 * Scores keeping count of how many correct and incorrect answers you've made.
+
 * Question clearly displayed and what number question it is.
+
 * A selection of 4 answers to the question.
+
 * A next button which will aloow you to continue to the next question.
 
 Completion Page:
 
 * A background image displaying the a sporting theme.
+  
 * A clear heading of the webpage.
+  
 * A progress bar showing what stages your at through out the quiz.
+
 * Scores keeping count of how many correct and incorrect answers you've made.
+
 * A congratulations message displaying your final score.
+
 * A play again button if you wish to take part in the quiz again.
 
 ## Technologies Used
@@ -76,8 +92,11 @@ HTML, CSS and JavaScript were used to create this site.
 ### Frameworks & Programs Used
 
 * Balsamiq - Used to create the wireframes.
+
 * Github - To save and store the files for the website.
+
 * Google Fonts - To import the fonts used for this website.
+
 * Favicon
 
 ## Deployment
@@ -85,8 +104,23 @@ HTML, CSS and JavaScript were used to create this site.
 Github Pages was used to deploy the live website. To do this are as followed:
 
 1. Log in to GUthub.
+
 2. Find the repository for this project, project 2 sports quiz.
+
 3. Navigate to the settings tab.
+
 4. Click on the pages link, in the list on the left-hand side of the page.
+
 5. Scroll down to branch and in the drop-down box select branch main. then click save.
+
 6. Refresh the page and at the top the link to the website shpuld be provided.
+
+## Testing
+
+### W3C Validator
+
+### Lighthouse
+
+### Full Testing
+
+## Credits
