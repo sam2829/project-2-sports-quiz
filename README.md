@@ -174,4 +174,20 @@ Quiz complete page mobile screenshot:
 
 ### Full Testing
 
+| Feature | Expected Outcome | Testing Performed | Result | Pass / Fail |
+|---|---|---|---|---|
+| Randomise Questions | Each time the website is refreshed the questions to appear in a different random order. | First go on to the website, think continually refresh the page to see if questions appear in different order. | Questions appear in different order. | Pass |
+| Hover Over Buttons | When the mouse hovers over the answers buttons, next button or submit button the background color will change to aqua. | Hovered the mouse over all the buttons. | Background color on all buttons change to aqua when hovered over. | Pass |
+| Selected Answer Correct or Incoreect | Each time you select an answer button, if correct that anser will change color to green. If incorrect selected answer will change to red and the correct answer will change to green. | Selected answers that were correct and incorrect throughout the quiz to check this works. | Correct answers changed to green. Incorrect answers changed to red whilst showing the correct answer in green. | Pass |
+| Answer Selected Turs Off Answer Button and Hover | Once you have selected an answer when the mouse cursor hovers over the answer button or another answer button the background color will no longer change to aqua and unable to select another answer. | Selected answers throughout the quiz to see if the hover class turned off and tried cslecting different answers. | The Hover background color change no longer applied and i was unable to select a different answer. | Pass |
+| Disable Next Button | The next button will only take you to the next question when you have selected an answer to the current question. | Tried clicking next to take me to the next question without selecting an answer. It would not go to the next question until i answered the current question. | Next button would not let me go to the next question until current question answered. | Pass |
+| Correct Score | When you get a correct answer the correct score should increment up by one each time. | Selected the correct answer throughout the quiz and watched the correct score increment up by one each time. | Correct score incremented up by 1 with every correct answer. | Pass |
+| Incorrect Score | When you get a incorrect answer the incorrect score should increment up by one each time. | Selected the incorrect answer throughout the quiz and watched the incorrect score increment up by one each time. | Incorrect score incremented up by 1 with every incorrect answer. | Pass |
+| 15 Questions each time | Each time you go through the quiz you should be asked 15 different questions. | Played the quiz several times to make sure each time i was asked 15 questions and the questions didnt repeat themselves in the same quiz. | 15 questions were displayed each time and werent repeated in the same quiz. | Pass |
+| Progress Bar | Progress bar fills up as you make your way through the quiz and is full on completion. | Played the quiz several times and looked for progress bar to make its way to full. | Progress bar begins empty and fills up with every question, up to full when quiz is complete. | Pass |
+| Congratulations Message | Congratulations message along with your final score is displayed upon completion of the quiz. | Completed the quiz several times. | When completing the quiz congratualtions is displayed along with my final score. | Pass |
+| Play Again Button | When the quiz is complete the play again button should appear and when clicked take you back to the start of the quiz. | Completed the quiz several times to check play again button appears and takes me to the start of the quiz. | When the quiz is complete the play agin button appears and when clicked takes me back to the start of the quiz. | Pass |
+| Answers and Questions no Longer Display | On completion of the quiz there should be no questions or answers being displayed. | Completed the quiz several times to see if there is any questions or answers being displayed. | Upon completing the quiz the questions and answers were no longer displayed. | Pass |
+
+
 ## Credits
