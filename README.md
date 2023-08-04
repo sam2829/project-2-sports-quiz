@@ -26,6 +26,9 @@ Link to deployed site:  https://sam2829.github.io/project-2-sports-quiz/
     - [Lighthouse](#lighthouse)
     - [Full Testing](#full-testing)
   - [Credits](#credits)
+    - [Content](#content)
+        - [JavaScript](#javascript)
+    - [Media](#media)
 
 ## Project Goals
 
@@ -117,7 +120,7 @@ HTML, CSS and JavaScript were used to create this site.
 
 * Google Fonts - To import the fonts used for this website.
 
-* Favicon
+* Favicon.io - Used to get Favicon for this website.
 
 ## Deployment
 
@@ -191,3 +194,17 @@ Quiz complete page mobile screenshot:
 
 
 ## Credits
+
+### Content
+
+##### JavaScript
+
+* JavaScript code for the progress bar was taken from trevthedev777 github for quiz game, which came up when I googled how to make a progress bar in javascript.
+- Watched tutorial on how to make a quiz game on youtube which i found was very helpful. <https://www.youtube.com/watch?v=riDzcEQbX6k>
+
+### Media
+
+* Background image for this project was taken from Google Images.
+* All questions and answers were found using Google.
+* Google Fonts was used to import the fonts for this website.
+* Favicon.io was used to import the Favicon for this website.
