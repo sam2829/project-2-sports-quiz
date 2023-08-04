@@ -148,6 +148,19 @@ body {
     border-radius: 8px;
 }
 
+/* Media  queries for screen sizes 820px wide and down */
+
+@media (max-width: 820px) {
+
+    .next-button:hover {
+        background-color: blue;
+    }
+
+    .next-button:active {
+        background-color: aqua;
+    }
+}
+
 /* Media queries for screen sizes 600px wide and down */
 
 @media (max-width: 600px) {
