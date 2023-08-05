@@ -50,7 +50,11 @@ Wireframes were created for both desktop and mobile devices.
 
 Desktop:
 
+![Wireframe Desktop](assets/screenshots/wireframe-desktop.png)
+
 Mobile:
+
+![Wireframe Mobile](assets/screenshots/wireframe-mobile.png)
 
 ## Features
 
