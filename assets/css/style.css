@@ -153,11 +153,11 @@ body {
 
 @media (max-width: 820px) {
 
-    .next-button:hover {
+    #next-button:hover {
         background-color: blue;
     }
 
-    .next-button:active {
+    #next-button:active {
         background-color: aqua;
     }
 }
