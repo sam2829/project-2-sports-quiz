@@ -87,6 +87,7 @@ body {
     font-size: 130%;
     padding: 0.8rem;
     color: #fff;
+    margin-bottom: 40px;
 }
 
 #next-button:hover {
