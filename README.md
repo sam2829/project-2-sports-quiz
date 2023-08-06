@@ -59,7 +59,23 @@ Mobile:
 
 ## Features
 
-This website consists of two pages. Main page where the quiz will be carried out and a completion page presenting your score.
+This website consists of three pages. Main page where the quiz will be carried out and a completion page presenting your score.
+
+Start Quiz Page:
+
+- A background image displaying a sporting theme.
+
+- A clear heading of the webpage.
+
+- A start quiz button which when clicked will take you to the main page and begin the quiz.
+
+Start quiz page desktop screenshot:
+
+![Start Quiz Page Desktop](assets/screenshots/start-page-desktop.png)
+
+Start quiz page mobile screenshot:
+
+![Start Quiz Page Mobile](assets/screenshots/start-page-mobile.png)
 
 Main Page:
 
@@ -167,6 +183,14 @@ The W3C Validator was used to validate the html and CSS files for this website. 
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test for accessibility of the website.
+
+Start quiz page desktop screenshot:
+
+![Start quiz lighthouse desktop](assets/screenshots/lighthouse-start-quiz-desktop.png)
+
+Start quiz page mobile screenshot:
+
+![Start quiz lighthouse mobile](assets/screenshots/lighthouse-start-quiz-mobile.png)
 
 Main page desktop screenshot:
 
