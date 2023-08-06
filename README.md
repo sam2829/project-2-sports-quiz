@@ -23,11 +23,12 @@ Link to deployed site:  https://sam2829.github.io/project-2-sports-quiz/
   - [Deployment](#deployment)
   - [Testing](#testing)
     - [W3C Validator](#w3c-validator)
+    - [Javascript](#javascript)
     - [Lighthouse](#lighthouse)
     - [Full Testing](#full-testing)
   - [Credits](#credits)
     - [Content](#content)
-        - [JavaScript](#javascript)
+        - [JavaScript](#javascript-1)
     - [Media](#media)
 
 ## Project Goals
@@ -159,6 +160,10 @@ The W3C Validator was used to validate the html and CSS files for this website. 
 * HTHML - No errors or warnings found.
 * CSS - No errors or warnings found.
 
+### Javascript
+
+* JS Hint was used to validate my JavaScript code. This reported back warnings about using ES6.
+
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test for accessibility of the website.
@@ -183,7 +188,7 @@ Quiz complete page mobile screenshot:
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass / Fail |
 |---|---|---|---|---|
-| Randomise Questions | Each time the website is refreshed the questions to appear in a different random order. | First go on to the website, think continually refresh the page to see if questions appear in different order. | Questions appear in different order. | Pass |
+| Randomise Questions | Each time the website is refreshed the questions to appear in a different random order. | First go on to the website, then continually refresh the page to see if questions appear in different order. | Questions appear in different order. | Pass |
 | Hover Over Buttons | When the mouse hovers over the answer's buttons, next button or submit button the background color will change to aqua. | Hovered the mouse over all the buttons. | Background color on all buttons change to aqua when hovered over. | Pass |
 | Selected Answer Correct or Incorrect | Each time you select an answer button, if correct that answer will change color to green. If incorrect selected answer will change to red and the correct answer will change to green. | Selected answers that were correct and incorrect throughout the quiz to check this works. | Correct answers changed to green. Incorrect answers changed to red whilst showing the correct answer in green. | Pass |
 | Answer Selected Turns Off Answer Button and Hover | Once you have selected an answer when the mouse cursor hovers over the answer button or another answer button the background color will no longer change to aqua and unable to select another answer. | Selected answers throughout the quiz to see if the hover class turned off and tried selecting different answers. | The Hover background color change no longer applied and I was unable to select a different answer. | Pass |
