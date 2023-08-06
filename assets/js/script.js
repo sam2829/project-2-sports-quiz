@@ -141,7 +141,7 @@ let questions = [
     },
 ];
 
-let randomQuestions = questions.sort(() => Math.random() - .5);
+let randomQuestions = 0;
 let questionNumber = 0;
 let answerArea = document.getElementById("answer-area");
 let nextButton = document.getElementById("next-button");
@@ -149,22 +149,26 @@ let correctScore = parseInt(document.getElementById("score").innerText);
 let incorrectScore = parseInt(document.getElementById("incorrect").innerText);
 let progressBar = document.getElementById("my-bar");
 
-// Wait for DOM to finish laoding before starting the quiz
-
-//document.addEventListener("DOMContentLoaded", function pageLoaded() {
-    //startQuiz();
-
-//});
+// Wait for start quiz button to be clicked to begin the quiz
 
 document.getElementById("start-button").addEventListener("click", startQuiz);
-// Start Quiz and call for the display questions function
+
+/**
+ * start quiz function.
+ * hides the start quiz button and displays the quiz.
+ * Then calls the display questions function.
+ */
 
 function startQuiz() {
 
     document.getElementById("start-button").style.display = "none";
     document.getElementById("game-area").style.display = "block";
 
+    randomQuestions = questions.sort(() => Math.random() - .5);
+
     displayQuestions();
+
+
 
 }
 
