@@ -212,8 +212,10 @@ Quiz complete page mobile screenshot:
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass / Fail |
 |---|---|---|---|---|
+| `Start Quiz Page` |
+| Start Quiz Button | When the start quiz button is clicked the user will then be taken to the main page. The start quiz button will no longer be displayed and the quiz is ready to start with quiz now on display. | First go onto the website and click start quiz button. | Once button clicked it goes to the main quiz page with the quiz now on display and the start quiz button removed. | Pass |
 | `Main Page` |
-| Randomise Questions | Each time the website is refreshed the questions to appear in a different random order. | First go on to the website, then continually refresh the page to see if questions appear in different order. | Questions appear in different order. | Pass |
+| Randomise Questions | Each time the user starts or restarts the quiz the questions will appear in a different random order. | First go on to the website and click the start quiz button. Then complete the quiz and click the play again button. Do this several times. | Questions appear in different order each time. | Pass |
 | Hover Over Buttons | When the mouse hovers over the answer's buttons, next button or submit button the background color will change to aqua. | Hovered the mouse over all the buttons. | Background color on all buttons change to aqua when hovered over. | Pass |
 | Selected Answer Correct or Incorrect | Each time you select an answer button, if correct that answer will change color to green. If incorrect selected answer will change to red and the correct answer will change to green. | Selected answers that were correct and incorrect throughout the quiz to check this works. | Correct answers changed to green. Incorrect answers changed to red whilst showing the correct answer in green. | Pass |
 | Answer Selected Turns Off Answer Button and Hover | Once you have selected an answer when the mouse cursor hovers over the answer button or another answer button the background color will no longer change to aqua and unable to select another answer. | Selected answers throughout the quiz to see if the hover class turned off and tried selecting different answers. | The Hover background color change no longer applied and I was unable to select a different answer. | Pass |
