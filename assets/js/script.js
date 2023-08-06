@@ -45,7 +45,7 @@ let questions = [
         answers: [
             { text: "Polo", correct: true },
             { text: "Bowls", correct: false },
-            { text: "Volley Ball", correct: false },
+            { text: "Volleyball", correct: false },
             { text: "Rugby", correct: false }
         ],
     },

@@ -213,7 +213,7 @@ Quiz complete page mobile screenshot:
 | Feature | Expected Outcome | Testing Performed | Result | Pass / Fail |
 |---|---|---|---|---|
 | `Start Quiz Page` |
-| Start Quiz Button | When the start quiz button is clicked the user will then be taken to the main page. The start quiz button will no longer be displayed and the quiz is ready to start with quiz now on display. | First go onto the website and click start quiz button. | Once button is clicked it goes to the main quiz page with the quiz now on display and the start quiz button removed. | Pass |
+| Start Quiz Button | When the start quiz button is clicked the user will then be taken to the main page. The start quiz button will no longer be displayed, and the quiz is ready to start with quiz now on display. | First go onto the website and click start quiz button. | Once button is clicked it goes to the main quiz page with the quiz now on display and the start quiz button removed. | Pass |
 | `Main Page` |
 | Randomise Questions | Each time the user starts or restarts the quiz the questions will appear in a different random order. | First go on to the website and click the start quiz button. Then complete the quiz and click the play again button. Do this several times. | Questions appear in different order each time. | Pass |
 | Hover Over Buttons | When the mouse hovers over the answer's buttons, next button or submit button the background color will change to aqua. | Hovered the mouse over all the buttons. | Background color on all buttons change to aqua when hovered over. | Pass |
