@@ -1,4 +1,6 @@
-
+/**
+ * Parts of code was taken from youtube tutorial which is referenced in the readme file with a url link.
+ */
 
 //List of all the questions and answers in the quiz
 
