@@ -154,8 +154,8 @@ let progressBar = document.getElementById("my-bar");
 document.getElementById("start-button").addEventListener("click", startQuiz);
 
 /**
- * start quiz function.
- * hides the start quiz button and displays the quiz.
+ * Start quiz function.
+ * Hides the start quiz button and displays the quiz.
  * Randomises the order of the questions each time quiz starts.
  * Then calls the display questions function.
  */
