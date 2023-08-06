@@ -212,7 +212,7 @@ body {
         font-size: 1.4rem;
     }
 
-    /* next and play again buttons */
+    /* next, start quiz and play again buttons */
 
     #next-button {
         font-size: 120%;
@@ -223,6 +223,10 @@ body {
         font-size: 120%;
         margin-top: 40px;
     }
+
+    #start-button {
+        font-size: 120%;
+     }
 
     /*Score area*/
 
