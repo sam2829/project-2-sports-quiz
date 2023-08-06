@@ -23,7 +23,7 @@ Link to deployed site:  https://sam2829.github.io/project-2-sports-quiz/
   - [Deployment](#deployment)
   - [Testing](#testing)
     - [W3C Validator](#w3c-validator)
-    - [Javascript](#javascript)
+    - [JavaScript](#javascript)
     - [Lighthouse](#lighthouse)
     - [Full Testing](#full-testing)
   - [Credits](#credits)
@@ -160,7 +160,7 @@ The W3C Validator was used to validate the html and CSS files for this website. 
 * HTHML - No errors or warnings found.
 * CSS - No errors or warnings found.
 
-### Javascript
+### JavaScript
 
 * JS Hint was used to validate my JavaScript code. This reported back warnings about using ES6.
 
