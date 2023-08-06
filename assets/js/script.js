@@ -63,7 +63,7 @@ let questions = [
         answers: [
             { text: "Judo", correct: false },
             { text: "Equestrian", correct: true },
-            { text: "Dressage", correct: false },
+            { text: "Volleyball", correct: false },
             { text: "Gymnastics", correct: false }
         ],
     },
