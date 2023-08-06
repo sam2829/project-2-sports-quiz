@@ -21,9 +21,10 @@ body {
 
 /* Game area style */
 
-.game-area {
+#game-area {
     width: 100%;
     height: auto;
+    display: none;
 }
 
 /* Question Style */
@@ -88,6 +89,7 @@ body {
     padding: 0.8rem;
     color: #fff;
     margin-bottom: 40px;
+    display: hide;
 }
 
 #next-button:hover {
@@ -111,6 +113,24 @@ body {
 #play-again:hover {
     background-color: aqua;
 }
+
+/* Start quiz button */
+
+#start-button {
+    font: 1.5rem;
+    margin-top: 50px;
+    background-color: blue;
+    border-radius: 8px;
+    font-size: 130%;
+    padding: 0.8rem;
+    color: #fff;
+    text-align: center;
+}
+
+#start-button:hover {
+    background-color: aqua;
+}
+
 
 /* Score area style */
 

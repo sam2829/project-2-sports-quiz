@@ -151,15 +151,18 @@ let progressBar = document.getElementById("my-bar");
 
 // Wait for DOM to finish laoding before starting the quiz
 
-document.addEventListener("DOMContentLoaded", function pageLoaded() {
-    startQuiz();
+//document.addEventListener("DOMContentLoaded", function pageLoaded() {
+    //startQuiz();
 
-});
+//});
 
+document.getElementById("start-button").addEventListener("click", startQuiz);
 // Start Quiz and call for the display questions function
 
 function startQuiz() {
 
+    document.getElementById("start-button").style.display = "none";
+    document.getElementById("game-area").style.display = "block";
 
     displayQuestions();
 
